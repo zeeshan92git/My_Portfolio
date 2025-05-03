@@ -9,7 +9,7 @@ function About() {
           <span className="underline decoration-0 underline-offset-4">INT</span>RODUCTION
         </p>
 
-        <p className="text-2xl sm:text-4xl md:text-5xl font-bold text-white">
+        <p className="sm:text-5xl text-3xl font-bold text-white mt-2">
           Know more about me
         </p>
       </div>
