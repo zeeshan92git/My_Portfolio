@@ -14,15 +14,18 @@ function App() {
     // AOS animation
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       once: false,
+      easing : 'linear',
+      mirror: false,
+      debounceDelay: 50
     });
   }, []);
 
   return (
     <>
       
-      <div className="scroll-smooth  dark:bg-[#0f172a] dark:text-white min-h-screen">
+      <div className="scroll-smooth  bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white min-h-screen">
         <section id="home">
           <Hero />
         </section>

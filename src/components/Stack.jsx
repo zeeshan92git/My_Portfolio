@@ -3,7 +3,7 @@ import React from 'react';
 function TechStack() {
   return (
     <>
-      <section id='stack' className='w-full  p-6 sm:p-10 md:p-14 overflow-x-hidden overflow-visible bg-gradient-to-bl from-slate-700 via-slate-900 to-slate-800'>
+      <section id='stack' className='w-full  p-6 sm:p-10 md:p-14 overflow-x-hidden overflow-visible '>
         
         <div className='pt-2 mb-7 md:mb-10  '>
           <p className="text-lg text-neutral-200 font-extralight">
@@ -14,7 +14,7 @@ function TechStack() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           {/* COLUMN 1 */}
-          <div data-aos="zoom-out-down" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
+          <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
             {["html.png", "css.png", "js.png"].map((src, i) => (
               <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
                 <a href="#" target='_blank' rel='noopener noreferrer'>
@@ -25,7 +25,7 @@ function TechStack() {
           </div>
 
           {/* COLUMN 2 */}
-          <div data-aos="zoom-out-down" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
+          <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
             {["react.png", "next.png", "node.png"].map((src, i) => (
               <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
                 <a href="#" target='_blank' rel='noopener noreferrer'>
@@ -36,7 +36,7 @@ function TechStack() {
           </div>
 
           {/* COLUMN 3 */}
-          <div data-aos="zoom-out-down" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
+          <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
             {["t-css.png", "bs-css.jpeg", "mongodb.png"].map((src, i) => (
               <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
                 <a href="#" target='_blank' rel='noopener noreferrer'>

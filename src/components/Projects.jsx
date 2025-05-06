@@ -25,7 +25,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="w-full p-6 sm:p-10 md:p-14 overflow-x-hidden bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950">
+    <section id="projects" className="w-full p-6 sm:p-10 md:p-14 overflow-x-hidden">
       <div className="pt-2 mb-5 md:mb-10">
         <p className="text-lg text-neutral-100 font-extralight">
           <span className="underline decoration-0 underline-offset-4">PR</span>OJECTS
@@ -44,32 +44,37 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              data-aos="zoom-out-down"
-              className="w-full max-w-md bg-slate-800 rounded-2xl shadow-lg hover:shadow-inner hover:shadow-neutral-200 transition duration-300 overflow-hidden flex flex-col"
+              data-aos="zoom-in"
+              className="w-full max-w-sm bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
             >
-              <img
-                src={project.img}
-                alt={project.title}
-                className="w-full h-64 sm:h-72 object-fill lg:object-cover bg-neutral-100  rounded-md"
-              />
-              <div className="p-6 flex flex-col justify-between flex-grow min-h-[160px]">
-                <div className="flex gap-2 items-center">
-                  <i className="fa fa-circle text-orange-500" aria-hidden="true"></i>
-                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+              <div className="w-full h-48 sm:h-60 md:h-64 overflow-hidden">
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="p-5 flex flex-col justify-between flex-grow">
+                <div className="flex items-center gap-2 mb-2">
+                  <i className="fa fa-circle text-orange-500 text-xs" aria-hidden="true"></i>
+                  <h3 className="text-lg md:text-xl font-semibold text-white">{project.title}</h3>
                 </div>
-                <div className="flex items-center gap-2 text-orange-600 font-semibold w-fit hover:text-white mt-auto">
-                  <p className="md:text-xl text-lg">Visit Here</p>
+
+                <div className="mt-auto flex items-center gap-2 text-orange-500 hover:text-white font-medium transition">
+                  <p className="text-base md:text-lg">Visit Here</p>
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex gap-1 items-center text-lg"
+                    className="text-lg pt-1"
                   >
-                    <i className="fa fa-external-link sm:text-lg text-sm pt-2" aria-hidden="true"></i>
+                    <i className="fa fa-external-link" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
+
           ))}
         </div>
       </div>

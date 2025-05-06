@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <section className="relative bg-gradient-to-br dark:from-slate-900 dark:via-slate-800 dark:to-slate-700 py-12 px-4 sm:px-6 md:px-12 lg:px-16 transition-colors duration-500">
+    <section className="relative  py-12 px-4 sm:px-6 md:px-12 lg:px-16 transition-colors duration-500">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto">
 
         {/* Text Section */}
@@ -27,7 +27,7 @@ function Hero() {
           <div className="flex justify-center lg:justify-start">
             <a
               href="mailto:zeeshanameer576@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Zeeshan,%0AI'm%20interested%20in%20your%20portfolio%20project.%0ALet's%20connect!"
-              className="px-6 sm:px-14 py-2 sm:py-3 bg-orange-500 text-white text-base sm:text-lg rounded-full font-semibold shadow-xl hover:bg-orange-400 transition animate-scale-shadow"
+              className="px-8 sm:px-14 py-2 sm:py-3 bg-orange-500 text-white text-base sm:text-lg rounded-full font-semibold shadow-xl hover:bg-orange-400 transition animate-scale-shadow"
             >
               Hire Me
             </a>
@@ -43,7 +43,7 @@ function Hero() {
           <img
             src="./profile-img.png"
             alt="Profile"
-            className="relative z-10 w-full h-full object-cover rounded-full border  dark:border-gray-700 shadow-xl"
+            className="relative z-10 w-full h-full object-cover rounded-full border  dark:border-gray-700 shadow-sm shadow-slate-400"
           />
         </div>
       </div>
