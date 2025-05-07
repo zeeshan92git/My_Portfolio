@@ -7,24 +7,24 @@ function Hero() {
 
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <p className="text-orange-600 dark:text-orange-400 font-semibold text-base sm:text-lg mb-2">Hey there 👋</p>
+          <p className="text-orange-500 font-semibold text-base sm:text-lg md:text-xl mb-2">Hey there 👋</p>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-neutral-800 dark:text-white mb-4">
-            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500  to-purple-500">Muhammad Zeeshan Ameer</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-white mb-4">
+            I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-purple-500">Muhammad Zeeshan Ameer</span>
           </h1>
 
           <h2 className="mb-6 flex gap-3 justify-center lg:justify-start items-center">
-            <p className="animate-scale-shadow text-lg sm:text-xl md:text-2xl font-medium dark:text-gray-100">
+            <p className="animate-text-shadow text-lg sm:text-xl md:text-2xl font-medium text-white max-w-fit">
               Full Stack MERN Developer
             </p>
             <i className="fa fa-laptop text-2xl sm:text-3xl text-gray-700 dark:text-white mt-2" aria-hidden="true"></i>
           </h2>
 
-          <p className=" dark:text-gray-300 text-sm sm:text-base md:text-lg mb-8 max-w-xl font-semibold mx-auto lg:mx-0">
+          <p className=" dark:text-neutral-300 text-sm sm:text-base md:text-lg mb-8 max-w-xl font-semibold mx-auto lg:mx-0">
             I build modern, responsive, and user-focused websites that help businesses stand out. Let's work together to bring your ideas to life!
           </p>
 
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center  items-center lg:justify-start">
             <a
               href="mailto:zeeshanameer576@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Zeeshan,%0AI'm%20interested%20in%20your%20portfolio%20project.%0ALet's%20connect!"
               className="px-8 sm:px-14 py-2 sm:py-3 bg-orange-500 text-white text-base sm:text-lg rounded-full font-semibold shadow-xl hover:bg-orange-400 transition animate-scale-shadow"
@@ -43,7 +43,7 @@ function Hero() {
           <img
             src="./profile-img.png"
             alt="Profile"
-            className="relative z-10 w-full h-full object-cover rounded-full border  dark:border-gray-700 shadow-sm shadow-slate-400"
+            className="relative z-10 w-full h-full object-cover rounded-full border  dark:border-neutral-700 shadow-inner shadow-neutral-700"
           />
         </div>
       </div>

@@ -1,17 +1,8 @@
 import React from 'react';
 
 export default function Projects() {
+
   const projects = [
-    {
-      img: './quiz.jpg',
-      title: 'Quiz App',
-      link: 'https://quiz-app-kappa-ecru.vercel.app'
-    },
-    {
-      img: './rps.jpg',
-      title: 'RPS Game',
-      link: 'https://zeeshan92git.github.io/RPS-GAME'
-    },
     {
       img: './doccure.jpg',
       title: 'DocCure Service',
@@ -21,6 +12,16 @@ export default function Projects() {
       img: './admin.jpg',
       title: 'DocCure Admin Panel',
       link: 'https://doc-admin.up.railway.app'
+    },
+    {
+      img: './quiz.jpg',
+      title: 'Quiz App',
+      link: 'https://quiz-app-kappa-ecru.vercel.app'
+    },
+    {
+      img: './rps.jpg',
+      title: 'RPS Game',
+      link: 'https://zeeshan92git.github.io/RPS-GAME'
     }
   ];
 
@@ -45,7 +46,7 @@ export default function Projects() {
             <div
               key={index}
               data-aos="zoom-in"
-              className="w-full max-w-sm bg-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col"
+              className="w-full max-w-sm bg-slate-800 rounded-2xl shadow-inner  shadow-neutral-100 transition-all duration-300 overflow-hidden flex flex-col"
             >
               <div className="w-full h-48 sm:h-60 md:h-64 overflow-hidden">
                 <img

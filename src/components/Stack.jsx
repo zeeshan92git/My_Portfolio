@@ -12,11 +12,11 @@ function TechStack() {
           <p className="sm:text-5xl text-3xl font-bold text-white mt-2">My Current Stacks</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3  gap-6 justify-items-center">
           {/* COLUMN 1 */}
           <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
             {["html.png", "css.png", "js.png"].map((src, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
+              <div key={i} className="bg-white rounded-lg  sm:w-full w-3/4  md:p-10 p-6  flex justify-center items-center  shadow-md shadow-slate-300">
                 <a href="#" target='_blank' rel='noopener noreferrer'>
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain " alt={src} />
                 </a>
@@ -26,8 +26,8 @@ function TechStack() {
 
           {/* COLUMN 2 */}
           <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
-            {["react.png", "next.png", "node.png"].map((src, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
+            {["react.png", "t-css.png", "bs-css.jpeg"].map((src, i) => (
+              <div key={i} className="bg-white rounded-lg  sm:w-full w-3/4  md:p-10 p-6 flex justify-center items-center  shadow-md shadow-slate-300">
                 <a href="#" target='_blank' rel='noopener noreferrer'>
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain" alt={src} />
                 </a>
@@ -37,8 +37,8 @@ function TechStack() {
 
           {/* COLUMN 3 */}
           <div data-aos="zoom-in" className="flex flex-col gap-6 items-center w-full max-w-[300px]">
-            {["t-css.png", "bs-css.jpeg", "mongodb.png"].map((src, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-lg p-10 flex justify-center items-center w-full">
+            {["next.png", "node.png", "mongodb.png"].map((src, i) => (
+              <div key={i} className="bg-white rounded-lg  sm:w-full w-3/4  md:p-10 p-6  flex justify-center items-center  shadow-md shadow-slate-300">
                 <a href="#" target='_blank' rel='noopener noreferrer'>
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain " alt={src} />
                 </a>

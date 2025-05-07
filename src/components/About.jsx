@@ -9,13 +9,13 @@ function About() {
           <span className="underline decoration-0 underline-offset-4">INT</span>RODUCTION
         </p>
 
-        <p className="sm:text-5xl text-3xl font-bold text-white mt-2">
+        <p className="sm:text-5xl text-3xl font-bold text-white mt-2 ">
           Know more about me
         </p>
       </div>
 
       <div className="w-full md:w-4/5 lg:w-2/3">
-        <p className="text-base sm:text-lg text-zinc-100 leading-relaxed ">
+        <p className="text-sm sm:text-base md:text-lg font-semibold text-neutral-300 leading-relaxed ">
           Hello! My name is <span className="font-bold text-neutral-200">ZEESHAN AMEER</span>, and I am currently studying at Punjab University College of Information and Technology(NC), 
           Lahore, as part of the BS Software Engineering Batch (2023-2027).  I completed a MERN Stack Full-Stack Development course from Nexus Berry Training and Solutions Centre.
           I've worked on several small projects and continue to build and improve my skills. I am dedicated, curious, and always excited to grow as a developer in both web and mobile

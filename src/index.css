@@ -4,3 +4,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+    .animate-text-shadow {
+        animation: text-shadow 8s linear infinite forwards;
+    }
+
+    .animate-scale-shadow {
+        animation: scale-shadow 3s linear infinite forwards;
+    }
+
+    @keyframes text-shadow {
+        0% {
+            clip-path: inset(0 100% 0 0);
+            opacity: 0;
+        }
+
+        50% {
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }
+
+        100% {
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes scale-shadow {
+
+        0%,
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0px rgba(255, 255, 255, 0.2);
+        }
+
+        50% {
+            transform: scale(1.05);
+            box-shadow: -2px 8px 10px rgba(255, 166, 0, 0.548);
+            /* orange glow */
+        }
+    }
+}
