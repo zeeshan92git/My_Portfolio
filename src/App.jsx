@@ -14,7 +14,7 @@ function App() {
     // AOS animation
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1200,
       once: false,
       easing : 'linear',
       mirror: false,

@@ -45,7 +45,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              data-aos="zoom-in"
+              data-aos={index%2 == 0 ? `zoom-in-right` : `zoom-in-left`}
               className="w-full max-w-sm bg-slate-800 rounded-2xl shadow-inner  shadow-neutral-100 transition-all duration-300 overflow-hidden flex flex-col"
             >
               <div className="w-full h-48 sm:h-60 md:h-64 overflow-hidden">

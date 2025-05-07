@@ -2,7 +2,7 @@ import React from 'react';
 // bg-gradient-to-br from-slate-900 to-slate-900
 function Footer() {
     return (
-        <footer id="contact" className="bg-gray-950 border-t-2 border-gray-700 text-white pt-12 px-4 flex flex-col items-center ">
+        <footer id="contact" className="bg-gray-950 border-t border-gray-700 text-white pt-12 px-4 flex flex-col items-center ">
            
             <div className="text-center mb-10 max-w-3xl mx-auto">
                 <p className="text-xl sm:text-2xl md:text-3xl  leading-relaxed text-gray-200 font-bold">
