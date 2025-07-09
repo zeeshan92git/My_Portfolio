@@ -37,13 +37,13 @@ function Hero() {
         {/* Image Section */}
         <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
           {/* Glowing Gradient */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-orange-500 to-neutral-500 dark:from-orange-400 dark:to-gray-700 blur-3xl opacity-70 z-0"></div>
+          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-orange-500 to-gray-500 blur-3xl opacity-70 z-0"></div>
 
           {/* Profile Image */}
           <img
             src="./profile-img.png"
             alt="Profile"
-            className="relative z-10 w-full h-full object-cover rounded-full border  dark:border-neutral-700 shadow-inner shadow-neutral-700"
+            className="relative z-10 w-full h-full object-contain rounded-full border border-orange-900 shadow-inner shadow-neutral-700"
           />
         </div>
       </div>

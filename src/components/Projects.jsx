@@ -6,16 +6,16 @@ export default function Projects() {
     {
       img: './doccure.jpg',
       title: 'DocCure Service',
-      link: 'https://doccure-frontend.up.railway.app'
+      link: 'https://doccure-ecru.vercel.app'
     },
     {
       img: './admin.jpg',
       title: 'DocCure Admin Panel',
-      link: 'https://doc-admin.up.railway.app'
+      link: 'https://doccure-admin.vercel.app'
     },
     {
       img: './quiz.jpg',
-      title: 'Quiz App',
+      title: 'Flag Quiz App',
       link: 'https://quiz-app-kappa-ecru.vercel.app'
     },
     {
