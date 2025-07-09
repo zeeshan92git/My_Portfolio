@@ -23,7 +23,7 @@ function About() {
 
         </p>
         <p className="mt-6 sm:mt-10 underline decoration-2 underline-offset-8 text-slate-200 hover:text-orange-500 transition">
-          <a href="./My_Resume.pdf" download>
+          <a href="./Zeeshan.pdf" download>
             DOWNLOAD RESUME
           </a>
         </p>
