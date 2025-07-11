@@ -28,15 +28,15 @@ export default function Projects() {
   return (
     <section id="projects" className="w-full p-6 sm:p-10 md:p-14 overflow-x-hidden">
       <div className="pt-2 mb-5 md:mb-10">
-        <p className="text-lg text-neutral-100 font-extralight">
+        <p className="text-lg text-orange-400 font-extralight">
           <span className="underline decoration-0 underline-offset-4">PR</span>OJECTS
         </p>
         <p className="sm:text-5xl text-3xl font-bold text-white mt-2">Here is some of my work.</p>
         <p className="mt-3 sm:text-2xl text-neutral-100 leading-relaxed">
           Believes in progress through learning <br /> and mastery through practice.
         </p>
-        <p className="mt-6 sm:mt-8 underline decoration-2 underline-offset-8 text-slate-200 hover:text-orange-500 transition">
-          <a href="https://github.com/zeeshan92git" target="_blank" rel="noopener noreferrer">VISIT MY GITHUB</a>
+        <p className="mt-6 sm:mt-8 underline decoration-2 underline-offset-8 text-slate-200 ">
+          <a href="https://github.com/zeeshan92git" target="_blank" rel="noopener noreferrer" className='hover:text-orange-500 transition'>VISIT MY GITHUB</a>
         </p>
       </div>
 
@@ -46,7 +46,7 @@ export default function Projects() {
             <div
               key={index}
               data-aos={index%2 == 0 ? `zoom-in-right` : `zoom-in-left`}
-              className="w-full max-w-sm bg-slate-800 rounded-2xl shadow-inner  shadow-neutral-100 transition-all duration-300 overflow-hidden flex flex-col"
+              className="w-full max-w-sm bg-neutral-800 rounded-xl shadow-inner  shadow-neutral-300 transition-all duration-300 overflow-hidden flex flex-col"
             >
               <div className="w-full h-48 sm:h-60 md:h-64 overflow-hidden">
                 <img

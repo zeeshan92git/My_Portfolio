@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       
-      <div className="scroll-smooth  bg-gradient-to-r dark:from-gray-950 dark:via-gray-800 dark:to-gray-900 dark:text-white min-h-screen">
+      <div className="scroll-smooth  bg-gradient-to-r from-neutral-950  to-neutral-900 text-white min-h-screen">
         <section id="home">
           <Hero />
         </section>

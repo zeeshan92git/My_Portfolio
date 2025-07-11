@@ -1,68 +1,53 @@
 import React from 'react';
-// bg-gradient-to-br from-slate-900 to-slate-90
 
 function Footer() {
     return (
-        <footer id="contact" className="bg-gray-900 border-t border-gray-800 text-white pt-12 px-4 flex flex-col items-center ">
-           
-            <div className="text-center mb-10 max-w-3xl mx-auto">
-                <p className="text-xl sm:text-2xl md:text-3xl  leading-relaxed text-gray-200 font-bold">
-                    "<span className='text-orange-500'> Never</span> stop learning, <span className='text-orange-500'>Never</span> give up your dreams. We don't just come here to <span className='text-orange-500'>lose</span>, 
-                    Keep <span className='text-orange-500'>fighting</span> for your <span className='text-orange-500'>dreams </span>."
-                </p>
-            </div>
+        <footer id="contact" className="bg-neutral-950 text-white pt-16 px-6 sm:px-12 lg:px-24">
+            <div className="max-w-7xl mx-auto grid gap-16 lg:grid-cols-3">
 
-            {/* Social Links */}
-            <div className="mb-8 text-center">
-                <h4 className="text-2xl font-bold mb-4">Follow Me</h4>
-                <div className="flex justify-center space-x-6 ">
-                    <a
-                        href="https://linkedin.com/in/muhammadzeeshanameer"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-blue-200 transition"
-                        aria-label="LinkedIn"
-                    >
-                        <i className="fa fa-linkedin-square text-2xl md:text-3xl text-blue-500 hover:text-blue-600" aria-hidden="true"></i>
-                    </a>
-                    <a
-                        href="https://github.com/zeeshan92git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-gray-300 transition"
-                        aria-label="GitHub"
-                    >
-                       <i className="fa fa-github-square text-2xl md:text-3xl text-gray-400 hover:text-gray-500" aria-hidden="true"></i>
-                    </a>
-                    <a
-                        href="https://leetcode.com/u/m_xeeshan"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-blue-300 transition"
-                        aria-label="Leetcode"
-                    >
-                        <img src="./leet.png" alt="leetcode_logo" className=' md:w-6   md:h-6  w-5 h-5  p-1 mt-1.5 rounded-md bg-yellow-500  hover:bg-yellow-600 ' />
-                    </a>
+                {/* Quote Section */}
+                <p className="text-2xl sm:text-3xl font-semibold leading-relaxed text-gray-200">
+                    “<span className='text-orange-500'>Keep</span> learning. <span className='text-orange-500'>Keep</span> building. <span className='text-orange-500'>Keep</span> going.”
+                </p>
+
+
+                {/* Social Section */}
+                <div className="text-center flex flex-col items-start">
+                    <h4 className="text-2xl font-bold mb-4">Follow Me</h4>
+                    <div className="flex justify-center gap-6">
+                        <a href="https://linkedin.com/in/muhammadzeeshanameer" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                            <i className="fab fa-linkedin text-3xl text-white hover:text-blue-500 hover:scale-110 transition-transform"></i>
+                        </a>
+                        <a href="https://github.com/zeeshan92git" target="_blank" rel="noreferrer" aria-label="GitHub">
+                            <i className="fab fa-github text-3xl text-gray-200 hover:text-white hover:scale-110 transition-transform"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/m_xeeshan" target="_blank" rel="noreferrer" aria-label="LeetCode" className='hover:scale-110'>
+                            <img
+                                src="./leet.png"
+                                alt="LeetCode"
+                                className="w-7 h-7 mt-1.5 rounded-md bg-white hover:bg-yellow-500 p-1 transition-all"
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="flex flex-col items-start  lg:text-right space-y-3">
+                    <h4 className="text-2xl font-bold mb-2">Contact Me</h4>
+                    <p className="flex justify-center lg:justify-end items-center gap-2">
+                        <i className="fa fa-envelope text-orange-500 text-xl" aria-hidden="true"></i>
+                        <a href="mailto:zeeshanameer576@gmail.com" className="hover:text-orange-300 transition-colors">zeeshanameer576@gmail.com</a>
+                    </p>
+                    <p className="flex justify-center lg:justify-end items-center gap-2">
+                        <i className="fa fa-phone text-orange-500 text-xl" aria-hidden="true"></i>
+                        <a href="tel:+923286459508" className="hover:text-orange-300 transition-colors">+92 328 6459508</a>
+                    </p>
                 </div>
             </div>
-           {/* Contact Info */}
-            <div className="mb-8 text-center">
-                <h4 className="text-2xl font-bold mb-2">Contact Me</h4>
-                <p className='flex items-center gap-2'>
-                    <i className="fa fa-envelope text-orange-400 text-2xl " aria-hidden="true"></i>
-                    <a href="mailto:zeeshanameer576@gmail.com" className="hover:underline hover:text-orange-300">zeeshanameer576@gmail.com</a>
-                </p>
-                <p className='flex items-center gap-2'>
-                <i className="fa fa-phone text-orange-400 text-2xl"  aria-hidden="true"></i>
-                    <a href="tel:+923286459508" className="hover:underline hover:text-orange-300">
-                        +92 328 6459508
-                    </a>
-                </p>
-            </div>
 
-            {/* Copyright */} 
-            <div className="text-center text-md mb-2 mt-4 text-orange-200">
-                <p>&copy; <span>Designed by Zeeshan Ameer</span>. All rights reserved.</p>
+            {/* Divider */}
+            <div className="mt-12 border-t border-neutral-700 pt-6 text-center text-sm text-orange-400">
+                <p>&copy; {new Date().getFullYear()} <strong> M Zeeshan Ameer</strong>.</p>
             </div>
 
         </footer>

@@ -5,7 +5,7 @@ function About() {
     <section className="w-full px-4 sm:px-8 md:px-14 py-10 sm:py-14  " id="about">
 
       <div className="flex flex-col gap-1 items-start mb-8">
-        <p className="text-lg text-neutral-200 font-extralight">
+        <p className="text-lg text-orange-400 font-extralight">
           <span className="underline decoration-0 underline-offset-4">INT</span>RODUCTION
         </p>
 

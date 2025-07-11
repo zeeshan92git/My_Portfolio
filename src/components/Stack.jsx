@@ -6,7 +6,7 @@ function TechStack() {
       <section id='stack' className='w-full p-6 sm:p-10 md:p-14 overflow-x-hidden overflow-y-hidden'>
 
         <div className='pt-2 mb-7 md:mb-10'>
-          <p className="text-lg text-neutral-200 font-extralight">
+          <p className="text-lg text-orange-400 font-extralight">
             <span className="underline decoration-0 underline-offset-4">TECH</span>NOLOGY
           </p>
           <p className="sm:text-5xl text-3xl font-bold text-white mt-2">My Current Stacks</p>
@@ -21,7 +21,7 @@ function TechStack() {
                 key={i}
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-md shadow-slate-300"
+                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-lg shadow-neutral-300"
               >
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain" alt={src} />
@@ -37,7 +37,7 @@ function TechStack() {
                 key={i}
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-md shadow-slate-300"
+                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-lg shadow-neutral-300"
               >
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain" alt={src} />
@@ -53,7 +53,7 @@ function TechStack() {
                 key={i}
                 data-aos="fade-up"
                 data-aos-duration="600"
-                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-md shadow-slate-300"
+                className="bg-white rounded-lg sm:w-full w-3/4 md:p-10 p-6 flex justify-center items-center shadow-lg shadow-neutral-300"
               >
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <img src={`./${src}`} className="w-12 h-12 sm:w-16 sm:h-16 object-contain" alt={src} />
