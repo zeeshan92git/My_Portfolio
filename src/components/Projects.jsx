@@ -58,11 +58,11 @@ export default function Projects() {
 
               <div className="p-5 flex flex-col justify-between flex-grow">
                 <div className="flex items-center gap-2 mb-2">
-                  <i className="fa fa-circle text-orange-500 text-xs" aria-hidden="true"></i>
+                  <i className="fa fa-circle text-orange-400 text-xs" aria-hidden="true"></i>
                   <h3 className="text-lg md:text-xl font-semibold text-white">{project.title}</h3>
                 </div>
 
-                <div className="mt-auto flex items-center gap-2 text-orange-500 hover:text-white font-medium transition">
+                <div className="mt-auto flex items-center gap-2 text-orange-400 hover:text-white font-medium transition">
                   <p className="text-base md:text-lg">Visit Here</p>
                   <a
                     href={project.link}

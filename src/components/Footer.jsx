@@ -1,13 +1,14 @@
 import React from 'react';
-// bg-gradient-to-br from-slate-900 to-slate-900
+// bg-gradient-to-br from-slate-900 to-slate-90
+
 function Footer() {
     return (
-        <footer id="contact" className="bg-gray-950 border-t border-gray-700 text-white pt-12 px-4 flex flex-col items-center ">
+        <footer id="contact" className="bg-gray-900 border-t border-gray-800 text-white pt-12 px-4 flex flex-col items-center ">
            
             <div className="text-center mb-10 max-w-3xl mx-auto">
                 <p className="text-xl sm:text-2xl md:text-3xl  leading-relaxed text-gray-200 font-bold">
-                    "<span className='text-orange-500'>Never</span> stop learning, <span className='text-orange-500'>Never</span> give up your dreams. We don't just come here to lose, 
-                    Keep <span className='text-orange-500'>fighting</span> for your dreams."
+                    "<span className='text-orange-500'> Never</span> stop learning, <span className='text-orange-500'>Never</span> give up your dreams. We don't just come here to <span className='text-orange-500'>lose</span>, 
+                    Keep <span className='text-orange-500'>fighting</span> for your <span className='text-orange-500'>dreams </span>."
                 </p>
             </div>
 
@@ -22,7 +23,7 @@ function Footer() {
                         className="hover:text-blue-200 transition"
                         aria-label="LinkedIn"
                     >
-                        <i className="fa fa-linkedin-square text-2xl md:text-3xl text-yellow-500 hover:text-orange-500" aria-hidden="true"></i>
+                        <i className="fa fa-linkedin-square text-2xl md:text-3xl text-blue-500 hover:text-blue-600" aria-hidden="true"></i>
                     </a>
                     <a
                         href="https://github.com/zeeshan92git"
@@ -31,7 +32,7 @@ function Footer() {
                         className="hover:text-gray-300 transition"
                         aria-label="GitHub"
                     >
-                       <i className="fa fa-github-square text-2xl md:text-3xl text-yellow-500 hover:text-orange-500" aria-hidden="true"></i>
+                       <i className="fa fa-github-square text-2xl md:text-3xl text-gray-400 hover:text-gray-500" aria-hidden="true"></i>
                     </a>
                     <a
                         href="https://leetcode.com/u/m_xeeshan"
@@ -40,20 +41,19 @@ function Footer() {
                         className="hover:text-blue-300 transition"
                         aria-label="Leetcode"
                     >
-                        <img src="./leet.png" alt="leetcode_logo" className=' md:w-6   md:h-6  w-5 h-5  p-1 mt-1.5 rounded-md bg-yellow-500  hover:bg-orange-500 ' />
+                        <img src="./leet.png" alt="leetcode_logo" className=' md:w-6   md:h-6  w-5 h-5  p-1 mt-1.5 rounded-md bg-yellow-500  hover:bg-yellow-600 ' />
                     </a>
                 </div>
             </div>
-
-            {/* Contact Info */}
+           {/* Contact Info */}
             <div className="mb-8 text-center">
                 <h4 className="text-2xl font-bold mb-2">Contact Me</h4>
                 <p className='flex items-center gap-2'>
-                    <i className="fa fa-envelope text-yellow-500 text-2xl " aria-hidden="true"></i>
+                    <i className="fa fa-envelope text-orange-400 text-2xl " aria-hidden="true"></i>
                     <a href="mailto:zeeshanameer576@gmail.com" className="hover:underline hover:text-orange-300">zeeshanameer576@gmail.com</a>
                 </p>
                 <p className='flex items-center gap-2'>
-                <i className="fa fa-phone text-yellow-500 text-2xl"  aria-hidden="true"></i>
+                <i className="fa fa-phone text-orange-400 text-2xl"  aria-hidden="true"></i>
                     <a href="tel:+923286459508" className="hover:underline hover:text-orange-300">
                         +92 328 6459508
                     </a>
@@ -61,7 +61,7 @@ function Footer() {
             </div>
 
             {/* Copyright */} 
-            <div className="text-center text-md mb-2 mt-4 text-orange-500">
+            <div className="text-center text-md mb-2 mt-4 text-orange-200">
                 <p>&copy; <span>Designed by Zeeshan Ameer</span>. All rights reserved.</p>
             </div>
 

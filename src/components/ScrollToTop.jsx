@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function ScrollToTop() {
-  const [clicked, setClicked] = useState(false); // Start unclicked
+  const [clicked, setClicked] = useState(false); 
 
   const scrollToTop = () => {
     setClicked(true);
@@ -18,8 +18,8 @@ function ScrollToTop() {
   return (
     <div
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 p-4 rounded-full shadow-lg cursor-pointer transition-colors duration-300 
-        ${clicked ? 'bg-orange-500' : 'bg-gray-900 hover:bg-orange-500'} text-neutral-200`}
+      className={`fixed bottom-8 right-8 p-4 rounded-full shadow-lg cursor-pointer transition-colors duration-300
+          bg-orange-200 text-orange-500  hover:text-orange-100 hover:bg-orange-500`}
     >
       <i className="fa fa-arrow-up md:text-lg text-sm" aria-hidden="true"></i>
      
