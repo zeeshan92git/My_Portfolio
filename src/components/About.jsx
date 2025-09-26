@@ -5,7 +5,7 @@ function About() {
     <section className="w-full px-4 sm:px-8 md:px-14 py-10 sm:py-14  " id="about">
 
       <div className="flex flex-col gap-1 items-start mb-8">
-        <p className="text-lg text-orange-400 font-extralight">
+        <p className="text-lg text-blue-500 font-extralight">
           <span className="underline decoration-0 underline-offset-4">INT</span>RODUCTION
         </p>
 
@@ -22,8 +22,8 @@ function About() {
            application development.
 
         </p>
-        <p className="mt-6 sm:mt-10 underline decoration-2 underline-offset-8 text-slate-200 hover:text-orange-500 transition">
-          <a href="./Zeeshan.pdf" download>
+        <p className="mt-6 sm:mt-10 underline decoration-2 underline-offset-8 text-slate-200">
+          <a href="./Zeeshan.pdf" className='hover:text-indigo-500 transition' download>
             DOWNLOAD RESUME
           </a>
         </p>

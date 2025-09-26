@@ -32,7 +32,7 @@ function ScrollToTop() {
         <div
           onClick={scrollToTop}
           className={`fixed bottom-8 right-8 p-2 rounded-full cursor-pointer transition-all duration-300
-            bg-orange-200 text-orange-500 hover:text-white hover:bg-orange-500 shadow-lg z-50`}
+            bg-indigo-600 text-white hover:text-indigo-600 hover:bg-white shadow-lg z-50`}
         >
           <i className="fa fa-arrow-up md:text-lg text-sm font-bold" aria-hidden="true"></i>
         </div>
