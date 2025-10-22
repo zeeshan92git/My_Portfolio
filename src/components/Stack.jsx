@@ -1,52 +1,68 @@
 import React from "react";
 
 function TechStack() {
-
   const techStacks = [
     ["html.png", "css.png", "js.png"],
     ["reactjs.png", "t-css.png", "bs-css.png"],
     ["next.png", "node.png", "mongodb.png"],
   ];
 
-  
   const Card = ({ src }) => (
     <div
       data-aos="fade-up"
       data-aos-duration="600"
-      className="bg-gray-200/90 rounded-lg sm:w-full w-3/4 h-28 sm:h-32 
-                 flex justify-center items-center shadow-lg shadow-gray-400/50 
-                 hover:scale-105 transition-transform duration-300"
+      className="bg-gray-800/40 rounded-xl w-full h-28 sm:h-32 
+                 flex justify-center items-center border border-gray-700/50 
+                 shadow-lg shadow-indigo-900/20 hover:shadow-indigo-600/30
+                 hover:scale-105 transition-all duration-300"
     >
-      <a href="#" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full h-full flex items-center justify-center"
+      >
         <img
           src={`./${src}`}
           alt={src}
-          className="max-w-[60%] max-h-[60%] object-contain"
+          className="max-w-[55%] max-h-[55%] object-contain hover:scale-110 transition-transform duration-300"
         />
       </a>
     </div>
   );
 
   return (
-    <section id="stack" className="w-full p-6 sm:p-10 md:p-14 overflow-x-hidden overflow-y-hidden">
+    <section
+      id="stack"
+      className="relative w-full px-4 sm:px-10 md:px-16 py-16 sm:py-20 bg-gray-900 text-gray-100 overflow-x-hidden"
+    >
       {/* Heading */}
-      <div className="pt-2 mb-7 md:mb-10">
-        <p className="text-lg text-blue-600 font-extralight">
-          <span className="underline decoration-0 underline-offset-4">TECH</span>NOLOGY
+      <div className="text-center mb-12">
+        <p className="text-indigo-400 tracking-widest uppercase text-sm sm:text-base font-medium">
+          <span className="underline decoration-0 underline-offset-4">Tech</span>nology
         </p>
-        <p className="sm:text-5xl text-3xl font-bold text-white mt-2">My Current Stacks</p>
+        <h2 className="text-3xl sm:text-5xl font-bold text-white mt-2">
+          My Current Stacks
+        </h2>
+        <div className="mx-auto mt-3 w-20 h-1 bg-indigo-500 rounded"></div>
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
+      {/* Tech Grid */}
+      <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-6 sm:gap-8">
         {techStacks.map((column, colIndex) => (
-          <div key={colIndex} className="grid gap-6 place-items-center w-full max-w-[300px]">
+          <div
+            key={colIndex}
+            className="flex flex-col gap-6 items-center w-full sm:flex-1"
+          >
             {column.map((src, i) => (
               <Card key={i} src={src} />
             ))}
           </div>
         ))}
       </div>
+
+      {/* Bottom Glow Effect */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-2/3 h-24 bg-indigo-500/10 blur-3xl rounded-full pointer-events-none"></div>
     </section>
   );
 }

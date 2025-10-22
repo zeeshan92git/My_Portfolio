@@ -1,33 +1,71 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   return (
-    <section className="w-full px-4 sm:px-8 md:px-14 py-10 sm:py-14  " id="about">
+    <section
+      id="about"
+      className="w-full px-5 sm:px-10 md:px-16 lg:px-20 py-16 sm:py-24 bg-gray-900 text-gray-100"
+    >
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+        
+        {/* Left Text Section */}
+        <div className="w-full lg:w-2/3 space-y-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            About <span className="text-indigo-500">Me</span>
+          </h2>
+          <div className="w-20 h-1 bg-indigo-500 rounded mb-3"></div>
 
-      <div className="flex flex-col gap-1 items-start mb-8">
-        <p className="text-lg text-blue-500 font-extralight">
-          <span className="underline decoration-0 underline-offset-4">INT</span>RODUCTION
-        </p>
+          <p className="text-lg leading-relaxed text-gray-300">
+            I'm <strong className="text-white">Muhammad Zeeshan Ameer</strong>, a
+            passionate <span className="text-indigo-400 font-semibold">Full Stack Developer</span> 
+            dedicated to building creative and efficient web applications.
+            I focus on transforming ideas into high-quality, responsive, and user-friendly digital experiences.
+          </p>
 
-        <p className="sm:text-5xl text-3xl font-bold text-white mt-2 ">
-          Know more about me
-        </p>
-      </div>
+          <p className="text-lg leading-relaxed text-gray-300">
+            I am currently pursuing my BS Software Engineering from 
+            <span className="text-indigo-400 font-medium"> Punjab University College of Information and Technology (New Campus)</span>, 
+            and have completed a MERN Stack Development course from Nexus Berry Training & Solutions Centre.
+          </p>
 
-      <div className="w-full md:w-4/5 lg:w-2/3">
-        <p className="text-sm sm:text-base md:text-lg font-semibold text-neutral-300 leading-relaxed ">
-          Hello! My name is <span className="font-bold text-neutral-200">ZEESHAN AMEER</span>, and I am currently studying at Punjab University College of Information and Technology(NC), 
-          Lahore, as part of the BS Software Engineering Batch (2023-2027).  I completed a MERN Stack Full-Stack Development course from Nexus Berry Training and Solutions Centre.
-          I've worked on several small projects and continue to build and improve my skills. I am dedicated, curious, and always excited to grow as a developer in both web and mobile
-           application development.
+          {/* Skills Section */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-3">
+              Tech Stack I Work With
+            </h3>
+            <div className="flex flex-wrap gap-3 text-sm sm:text-base">
+              {[
+                "C#",
+                "ASP.NET Core",
+                "JavaScript (ES6+)",
+                "React.js",
+                "Node.js",
+                "MongoDB",
+                "SQL Server",
+                "Tailwind CSS",
+                "Git & GitHub",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full font-medium hover:bg-indigo-500 hover:text-white transition-all duration-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
 
-        </p>
-        <p className="mt-6 sm:mt-10 underline decoration-2 underline-offset-8 text-slate-200">
-          <a href="./Zeeshan.pdf" className='hover:text-indigo-500 transition' download>
-            DOWNLOAD RESUME
-          </a>
-        </p>
-
+          {/* Resume Button */}
+          <div className="pt-6">
+            <a
+              href="./Zeeshan_Ameer.pdf"
+              download
+              className="inline-block px-8 py-3 bg-indigo-600 text-white rounded-full font-semibold text-base sm:text-lg hover:bg-indigo-700 transition-all duration-300"
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
